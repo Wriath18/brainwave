@@ -35,42 +35,39 @@ import {
   twitter,
   yourlogo,
 } from "../assets";
-
+import healthcare from '../assets/healthcare.jpg';
+import financelogo from '../assets/finance_logo.png';
+import educationlogo from '../assets/education-logo.png';
+import sustainablelogo from '../assets/sustainable-logo.jpg';
+import aimllogo from '../assets/aimllogo.png';
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "THEMES AND TRACKS",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
+    title: "SPONSORS",
     url: "#pricing",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
+    title: "MENTORS AND JUDGES",
     url: "#roadmap",
   },
   {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
+    id: "3",
+    title: "CONTACT US",
+    url: "#contact",
   },
   {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
+    id: "4",
+    title: "REGISTER",
+    url: "https://devfolio.co",
     onlyMobile: true,
   },
 ];
-
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
@@ -133,16 +130,27 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "OPEN INNOVATION"
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "1,00,000 + PRIZE POOL",
+
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "GOODIES AND SWAGS FOR EVERYONE AT OFFLINE ROUND",
+
+  },
+  {
+    id: "3",
+    title: "10,000 + CASH PRIZES",
+
+  },
+  {
+    id: "4",
+    title: "FREE FOOD AND BEVERAGES AT OFFLINE ROUND",
+
   },
 ];
 
@@ -208,8 +216,8 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "SILVER",
+    description: "Powered By",
     price: "0",
     features: [
       "An AI chatbot that can understand your queries",
@@ -219,8 +227,8 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
+    title: "GOLD",
+    description: "Our Title Sponsors",
     price: "9.99",
     features: [
       "An advanced AI chatbot that can understand complex queries",
@@ -230,8 +238,8 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    title: "Bronze",
+    description: "Powered By",
     price: null,
     features: [
       "An AI chatbot that can understand your queries",
@@ -244,53 +252,53 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Open Innovation",
+    text: "Unleash your creativity on any topic or technology that ignites your passion. This track embraces diverse tech stacks, encouraging groundbreaking solutions across all domains.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Health Tech",
+    text: "Revolutionize healthcare through innovative technologies. From AI-driven diagnostics to wearable devices, create solutions that enhance patient care and medical efficiency.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: healthcare,
     light: true,
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Fin Tech",
+    text: "Shape the future of finance with cutting-edge technology. Develop solutions for digital payments, blockchain applications, or AI-powered financial advisors to transform the financial landscape.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: financelogo,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Ed Tech",
+    text: "Redefine learning experiences through innovative educational technologies. Create platforms, apps, or tools that make education more accessible, engaging, and effective for learners of all ages.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
+    imageUrl: educationlogo,
     light: true,
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Sustainability",
+    text: "Tackle global environmental challenges with tech-driven solutions. Develop innovations in renewable energy, waste reduction, or sustainable agriculture to create a greener, more sustainable future.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    imageUrl: sustainablelogo,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "AI/ML",
+    text: "Harness the power of Artificial Intelligence and Machine Learning to solve complex problems. Create intelligent systems that can learn, adapt, and revolutionize industries across the board.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: aimllogo,
   },
 ];
 

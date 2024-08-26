@@ -1,16 +1,16 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constants";
+import { check } from "../assets";
+import { collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
-import { LeftCurve, RightCurve } from "./design/Collaboration";
-
+import hackvorteximage from '../assets/Hack Vortex Logo 2.png';
+import grjimslogo from '../assets/geekroomjimslogo 1.png';
 const Collaboration = () => {
   return (
     <Section crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
+            Why Join US ?
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -27,20 +27,30 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Try it now</Button>
+          <Button href="https://linktr.ee/GeekRoom_Jims">Follow US</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+          {/* <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {collabText}
-          </p>
+          </p> */}
 
+          {/* Replaced circular image arrangement with a single large image */}
+          <div className="relative left-1/2 -translate-x-1/2 w-full max-w-[30rem] aspect-square p-8">
+            <img
+              src={grjimslogo}
+              alt="Hack Vortex"
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          {/* Commented out original circular image arrangement
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={brainwaveSymbol}
+                    src={hackvorteximage}
                     width={48}
                     height={48}
                     alt="brainwave"
@@ -77,6 +87,7 @@ const Collaboration = () => {
             <LeftCurve />
             <RightCurve />
           </div>
+          */}
         </div>
       </div>
     </Section>
